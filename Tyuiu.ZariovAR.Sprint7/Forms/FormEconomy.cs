@@ -22,6 +22,23 @@ namespace Tyuiu.ZariovAR.Sprint7
         string openFilePath;
         int cols, rows;
 
+        private void buttonGrafucEconomy_Click(object sender, EventArgs e)
+        {
+            chartEconomy.Series.Clear();
+            var series = new System.Windows.Forms.DataVisualization.Charting.Series("Численость населения");
+            series.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
+            foreach (DataGridViewRow row in this.dataGridViewEconomy.Rows)
+            {
+                if (!row.IsNewRow && row.Cells[1] != null && row.Cells[1].Value != null)
+                {
+                    string label = row.Cells[0].Value.ToString();
+                    double hours = Convert.ToDouble(row.Cells[1].Value);
+                    series.Points.AddXY(label, hours);
+                }
+            }
+            this.chartEconomy.Series.Add(series);
+        }
+
         private void buttonEconomy_Click(object sender, EventArgs e)
         {
             try
@@ -43,6 +60,44 @@ namespace Tyuiu.ZariovAR.Sprint7
 
             }
             catch { }
+        }
+
+        private void buttonSaveEconomy_Click(object sender, EventArgs e)
+        {
+            saveFileDialogEconomy.FileName = "World.csv";
+            saveFileDialogEconomy.InitialDirectory = Directory.GetCurrentDirectory();
+            saveFileDialogEconomy.ShowDialog();
+
+
+            string path = saveFileDialogEconomy.FileName;
+
+            FileInfo fileInfo = new FileInfo(path);
+            bool fileExists = fileInfo.Exists;
+            if (fileExists)
+            {
+                File.Delete(path);
+            }
+            int rows = dataGridViewEconomy.RowCount;
+            int columns = dataGridViewEconomy.ColumnCount;
+            string str = "";
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    if (j != columns - 1)
+                    {
+                        str = str + dataGridViewEconomy.Rows[i].Cells[j].Value + ";";
+                    }
+                    else
+                    {
+                        str = str + dataGridViewEconomy.Rows[i].Cells[j].Value;
+                    }
+                }
+                File.AppendAllText(path, str + Environment.NewLine);
+                str = "";
+            }
+
         }
     }
 }

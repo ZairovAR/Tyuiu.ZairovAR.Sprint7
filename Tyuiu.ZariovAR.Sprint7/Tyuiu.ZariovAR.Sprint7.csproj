@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormArturcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormArturcs.Designer.cs">
+      <DependentUpon>FormArturcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormGeography.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormGeography.Designer.cs">
+      <DependentUpon>FormGeography.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormPopulation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,8 +82,14 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormArturcs.resx">
+      <DependentUpon>FormArturcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEconomy.resx">
       <DependentUpon>FormEconomy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormGeography.resx">
+      <DependentUpon>FormGeography.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPopulation.resx">
       <DependentUpon>FormPopulation.cs</DependentUpon>
@@ -152,6 +170,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\map_search_outline_icon_139024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reference_icon-icons.com_67958.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reference_icon-icons.com_679581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reference_icon-icons.com_67958 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AYzW5rhFflQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_128.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

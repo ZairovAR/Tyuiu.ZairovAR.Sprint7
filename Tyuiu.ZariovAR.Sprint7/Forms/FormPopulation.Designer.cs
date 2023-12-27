@@ -31,15 +31,16 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartPopul = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.openFileDialogPopul = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogPopul = new System.Windows.Forms.SaveFileDialog();
             this.dataGridViewPopul = new System.Windows.Forms.DataGridView();
+            this.Страны = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Население = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonPopul = new System.Windows.Forms.Button();
             this.buttonPopulGrafic = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
-            this.Страны = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Население = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.chartPopul)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPopul)).BeginInit();
             this.SuspendLayout();
@@ -50,13 +51,19 @@
             this.chartPopul.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartPopul.Legends.Add(legend1);
-            this.chartPopul.Location = new System.Drawing.Point(262, 0);
+            this.chartPopul.Location = new System.Drawing.Point(261, 0);
             this.chartPopul.Name = "chartPopul";
+            this.chartPopul.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
+            series1.YValuesPerPoint = 2;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series2";
             this.chartPopul.Series.Add(series1);
-            this.chartPopul.Size = new System.Drawing.Size(819, 521);
+            this.chartPopul.Series.Add(series2);
+            this.chartPopul.Size = new System.Drawing.Size(1163, 672);
             this.chartPopul.TabIndex = 1;
             this.chartPopul.Text = "chart1";
             this.chartPopul.Click += new System.EventHandler(this.chartPopul_Click);
@@ -77,6 +84,16 @@
             this.dataGridViewPopul.RowHeadersVisible = false;
             this.dataGridViewPopul.Size = new System.Drawing.Size(244, 429);
             this.dataGridViewPopul.TabIndex = 0;
+            // 
+            // Страны
+            // 
+            this.Страны.HeaderText = "Страны";
+            this.Страны.Name = "Страны";
+            // 
+            // Население
+            // 
+            this.Население.HeaderText = "Население";
+            this.Население.Name = "Население";
             // 
             // buttonPopul
             // 
@@ -108,21 +125,11 @@
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // Страны
-            // 
-            this.Страны.HeaderText = "Страны";
-            this.Страны.Name = "Страны";
-            // 
-            // Население
-            // 
-            this.Население.HeaderText = "Население";
-            this.Население.Name = "Население";
-            // 
             // FormPopulation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1093, 555);
+            this.ClientSize = new System.Drawing.Size(1436, 684);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.chartPopul);
             this.Controls.Add(this.buttonPopulGrafic);

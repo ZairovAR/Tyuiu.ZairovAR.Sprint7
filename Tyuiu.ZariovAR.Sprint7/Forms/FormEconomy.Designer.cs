@@ -32,13 +32,14 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridViewEconomy = new System.Windows.Forms.DataGridView();
-            this.chartEconomy = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.Страна = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Экономика = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonEconomy = new System.Windows.Forms.Button();
             this.openFileDialogEconomy = new System.Windows.Forms.OpenFileDialog();
             this.buttonGrafucEconomy = new System.Windows.Forms.Button();
             this.buttonSaveEconomy = new System.Windows.Forms.Button();
-            this.Страна = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Экономика = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chartEconomy = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.saveFileDialogEconomy = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEconomy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartEconomy)).BeginInit();
             this.SuspendLayout();
@@ -54,21 +55,15 @@
             this.dataGridViewEconomy.Size = new System.Drawing.Size(244, 429);
             this.dataGridViewEconomy.TabIndex = 0;
             // 
-            // chartEconomy
+            // Страна
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartEconomy.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartEconomy.Legends.Add(legend1);
-            this.chartEconomy.Location = new System.Drawing.Point(262, 0);
-            this.chartEconomy.Name = "chartEconomy";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartEconomy.Series.Add(series1);
-            this.chartEconomy.Size = new System.Drawing.Size(787, 521);
-            this.chartEconomy.TabIndex = 1;
-            this.chartEconomy.Text = "chart1";
+            this.Страна.HeaderText = "Страна";
+            this.Страна.Name = "Страна";
+            // 
+            // Экономика
+            // 
+            this.Экономика.HeaderText = "Экономика";
+            this.Экономика.Name = "Экономика";
             // 
             // buttonEconomy
             // 
@@ -92,6 +87,7 @@
             this.buttonGrafucEconomy.TabIndex = 3;
             this.buttonGrafucEconomy.Text = "Вывести в график";
             this.buttonGrafucEconomy.UseVisualStyleBackColor = true;
+            this.buttonGrafucEconomy.Click += new System.EventHandler(this.buttonGrafucEconomy_Click);
             // 
             // buttonSaveEconomy
             // 
@@ -101,26 +97,33 @@
             this.buttonSaveEconomy.TabIndex = 4;
             this.buttonSaveEconomy.Text = "Сохранить";
             this.buttonSaveEconomy.UseVisualStyleBackColor = true;
+            this.buttonSaveEconomy.Click += new System.EventHandler(this.buttonSaveEconomy_Click);
             // 
-            // Страна
+            // chartEconomy
             // 
-            this.Страна.HeaderText = "Страна";
-            this.Страна.Name = "Страна";
-            // 
-            // Экономика
-            // 
-            this.Экономика.HeaderText = "Экономика";
-            this.Экономика.Name = "Экономика";
+            chartArea1.Name = "ChartArea1";
+            this.chartEconomy.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartEconomy.Legends.Add(legend1);
+            this.chartEconomy.Location = new System.Drawing.Point(262, 0);
+            this.chartEconomy.Name = "chartEconomy";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartEconomy.Series.Add(series1);
+            this.chartEconomy.Size = new System.Drawing.Size(854, 517);
+            this.chartEconomy.TabIndex = 1;
+            this.chartEconomy.Text = "chart1";
             // 
             // FormEconomy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 555);
+            this.ClientSize = new System.Drawing.Size(1321, 684);
+            this.Controls.Add(this.chartEconomy);
             this.Controls.Add(this.buttonSaveEconomy);
             this.Controls.Add(this.buttonGrafucEconomy);
             this.Controls.Add(this.buttonEconomy);
-            this.Controls.Add(this.chartEconomy);
             this.Controls.Add(this.dataGridViewEconomy);
             this.Name = "FormEconomy";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEconomy)).EndInit();
@@ -132,12 +135,13 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewEconomy;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartEconomy;
         private System.Windows.Forms.Button buttonEconomy;
         private System.Windows.Forms.OpenFileDialog openFileDialogEconomy;
         private System.Windows.Forms.Button buttonGrafucEconomy;
         private System.Windows.Forms.Button buttonSaveEconomy;
         private System.Windows.Forms.DataGridViewTextBoxColumn Страна;
         private System.Windows.Forms.DataGridViewTextBoxColumn Экономика;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartEconomy;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogEconomy;
     }
 }

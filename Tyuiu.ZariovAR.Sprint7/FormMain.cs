@@ -153,7 +153,28 @@ namespace Tyuiu.ZariovAR.Sprint7
 
         private void buttonterritory_Click(object sender, EventArgs e)
         {
+            if (sender != null)
+            {
+                if (currentButton != (Button)sender)
+                {
+                    DisableButton();
+                    Color color = ColorTranslator.FromHtml("#5F9EA0");
+                    currentButton = (Button)sender;
+                    currentButton.BackColor = color;
+                    currentButton.ForeColor = Color.White;
+                    paneltwo.BackColor = color;
+                    pictureBoxLogo.BackColor = ColorTranslator.FromHtml("#468185");
+                    pictureBoxMenu.Visible = true;
+                }
+            }
 
+            OpenChildForm(new FormGeography());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormArturcs formAbout = new FormArturcs();
+            formAbout.ShowDialog();
         }
     }
 }

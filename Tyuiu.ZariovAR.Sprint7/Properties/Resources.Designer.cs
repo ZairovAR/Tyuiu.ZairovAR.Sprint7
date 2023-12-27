@@ -113,6 +113,16 @@ namespace Tyuiu.ZariovAR.Sprint7.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AYzW5rhFflQ {
+            get {
+                object obj = ResourceManager.GetObject("AYzW5rhFflQ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boxclosecircularbutton_80036 {
             get {
                 object obj = ResourceManager.GetObject("boxclosecircularbutton_80036", resourceCulture);
@@ -186,6 +196,56 @@ namespace Tyuiu.ZariovAR.Sprint7.Properties {
         internal static System.Drawing.Bitmap map_search_outline_icon_139024 {
             get {
                 object obj = ResourceManager.GetObject("map_search_outline_icon_139024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reference_icon_icons_com_67958 {
+            get {
+                object obj = ResourceManager.GetObject("reference_icon-icons.com_67958", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reference_icon_icons_com_67958__1_ {
+            get {
+                object obj = ResourceManager.GetObject("reference_icon-icons.com_67958 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reference_icon_icons1 {
+            get {
+                object obj = ResourceManager.GetObject("reference_icon-icons1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_128 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_7 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

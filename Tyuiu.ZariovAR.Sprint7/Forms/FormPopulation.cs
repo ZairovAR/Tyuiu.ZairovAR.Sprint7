@@ -58,13 +58,19 @@ namespace Tyuiu.ZariovAR.Sprint7
                     double hours = Convert.ToDouble(row.Cells[1].Value);
                     series.Points.AddXY(label, hours);
                 }
+                else if (row.Cells[1] != null && row.Cells[1].Value != null) 
+                {
+                    string label = row.Cells[0].Value.ToString();
+                    double hours = Convert.ToDouble(row.Cells[1].Value);
+                    series.Points.AddXY(label, hours);
+                }
             }
             this.chartPopul.Series.Add(series);
         }
 
         private void chartPopul_Click(object sender, EventArgs e)
         {
-
+                
         }
 
         private void buttonSave_Click(object sender, EventArgs e)

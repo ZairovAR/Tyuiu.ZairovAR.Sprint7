@@ -34,6 +34,7 @@
             this.paneltwo = new System.Windows.Forms.Panel();
             this.flowLayoutPanelMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.timermenu = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.buttonMin = new System.Windows.Forms.Button();
             this.buttonWinow = new System.Windows.Forms.Button();
             this.X_butten = new System.Windows.Forms.Button();
@@ -71,6 +72,7 @@
             // paneltwo
             // 
             this.paneltwo.BackColor = System.Drawing.Color.Moccasin;
+            this.paneltwo.Controls.Add(this.button1);
             this.paneltwo.Controls.Add(this.buttonMin);
             this.paneltwo.Controls.Add(this.buttonWinow);
             this.paneltwo.Controls.Add(this.X_butten);
@@ -97,6 +99,21 @@
             // timermenu
             // 
             this.timermenu.Tick += new System.EventHandler(this.timermenu_Tick);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Moccasin;
+            this.button1.BackgroundImage = global::Tyuiu.ZariovAR.Sprint7.Properties.Resources.reference_icon_icons_com_67958__1_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.No;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(82, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(46, 45);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonMin
             // 
@@ -164,7 +181,6 @@
             // buttonPopulation
             // 
             this.buttonPopulation.BackColor = System.Drawing.Color.Moccasin;
-            this.buttonPopulation.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonPopulation.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonPopulation.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonPopulation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -174,7 +190,7 @@
             this.buttonPopulation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonPopulation.Location = new System.Drawing.Point(3, 84);
             this.buttonPopulation.Name = "buttonPopulation";
-            this.buttonPopulation.Size = new System.Drawing.Size(189, 51);
+            this.buttonPopulation.Size = new System.Drawing.Size(189, 92);
             this.buttonPopulation.TabIndex = 1;
             this.buttonPopulation.Text = "     Население ";
             this.buttonPopulation.UseVisualStyleBackColor = false;
@@ -188,9 +204,9 @@
             this.buttonMoney.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonMoney.Image = global::Tyuiu.ZariovAR.Sprint7.Properties.Resources._3925436_economy_graph_statistics_icon_111564;
             this.buttonMoney.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMoney.Location = new System.Drawing.Point(3, 141);
+            this.buttonMoney.Location = new System.Drawing.Point(3, 182);
             this.buttonMoney.Name = "buttonMoney";
-            this.buttonMoney.Size = new System.Drawing.Size(189, 50);
+            this.buttonMoney.Size = new System.Drawing.Size(189, 107);
             this.buttonMoney.TabIndex = 2;
             this.buttonMoney.Text = "     Экономика";
             this.buttonMoney.UseVisualStyleBackColor = false;
@@ -202,9 +218,9 @@
             this.buttonterritory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonterritory.Image = global::Tyuiu.ZariovAR.Sprint7.Properties.Resources.map_search_outline_icon_139024;
             this.buttonterritory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonterritory.Location = new System.Drawing.Point(3, 197);
+            this.buttonterritory.Location = new System.Drawing.Point(3, 295);
             this.buttonterritory.Name = "buttonterritory";
-            this.buttonterritory.Size = new System.Drawing.Size(189, 43);
+            this.buttonterritory.Size = new System.Drawing.Size(189, 109);
             this.buttonterritory.TabIndex = 3;
             this.buttonterritory.Text = "       Территория";
             this.buttonterritory.UseVisualStyleBackColor = false;
@@ -244,6 +260,7 @@
         private System.Windows.Forms.Button buttonMin;
         private System.Windows.Forms.Button buttonMoney;
         private System.Windows.Forms.Button buttonterritory;
+        private System.Windows.Forms.Button button1;
     }
 }
 

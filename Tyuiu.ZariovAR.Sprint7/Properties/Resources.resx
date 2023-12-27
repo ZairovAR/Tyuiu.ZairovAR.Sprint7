@@ -133,20 +133,29 @@
   <data name="boxclosecircularbutton_80036" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boxclosecircularbutton_80036.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reference_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reference_icon-icons.com_679581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="territory" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\territory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dot_checklist_list_todo_icon_226578 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dot_checklist_list_todo_icon_226578 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1492790919-81power_84209" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1492790919-81power_84209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reference_icon-icons.com_67958" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reference_icon-icons.com_67958.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1904666-calculate-close-delete-hide-minimize-minus-remove_122516 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1904666-calculate-close-delete-hide-minimize-minus-remove_122516 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cyclone_weather_world_time_icon_1942531" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cyclone_weather_world_time_icon_1942531.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map_search_outline_icon_139024" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map_search_outline_icon_139024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="window_maximize_icon_137012" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\window_maximize_icon_137012.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +172,16 @@
   <data name="3925436-economy-graph-statistics-icon_111564" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3925436-economy-graph-statistics-icon_111564.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="map_search_outline_icon_139024" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\map_search_outline_icon_139024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reference_icon-icons.com_67958 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reference_icon-icons.com_67958 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1492790919-81power_84209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1492790919-81power_84209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AYzW5rhFflQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AYzW5rhFflQ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Screenshot_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
